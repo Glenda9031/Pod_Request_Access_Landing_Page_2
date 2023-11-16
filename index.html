@@ -5,15 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
+  <section class="wrapper">
+    <div class="grid">
+      <div class="grid__image-host">
+        <picture>
+          <source media="(min-width: 83.125em)" srcset="images/desktop/image-host.jpg">
+          <source media="(min-width: 48em)" srcset="images/tablet/image-host.jpg">
+          <img src="images/mobile/image-host.jpg" alt="image host">
+        </picture>
+      </div>
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      <img src="images/desktop/logo.svg" alt="logo" class="grid__logo">
+      <main class="grid__main">
+        <div class="grid__main__content">
+          <h1 class="grid__main__title"><span>Publish your podcasts</span><br> everywhere.</h1>
+          <p class="grid__main__desc">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+            Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        </div>
 
-  Request access
+        <div class="grid__main__bottom">
+          <div class="grid__main__bottom__socials">
+            <div><img src="images/desktop/spotify.svg" alt="spotify logo"></div>
+            <div><img src="images/desktop/apple-podcast.svg" alt="apple podcasts logo"></div>
+            <div><img src="images/desktop/google-podcast.svg" alt="google podcasts logo"></div>
+            <div><img src="images/desktop/pocket-casts.svg" alt="pocket casts podcasts logo"></div>
+          </div>
+
+          <form class="grid__main__bottom__form" id="emailForm">
+            <div class="grid__main__bottom__form__email-field">
+              <input type="email" name="email" placeholder="Email Address" required>
+              <p class="error" id="error">Oops! Check your email</p>
+            </div>
+              <input type="submit" value="Request access">
+          </form>
+        </div>
+      </main>
+    </div>
+    <img src="images/desktop/bg-pattern-dots.svg" alt="pattern dots" class="pattern__dots">
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>

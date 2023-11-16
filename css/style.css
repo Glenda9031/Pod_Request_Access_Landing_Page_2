@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;700&display=swap');
+
+root {
+    --clr-primary-1: hsl(224, 35%, 11%);
+    --clr-primary-2: rgb(43, 51, 74);
+    --clr-primary-3: hsl(225, 21%, 45%);
+    --clr-secondary-1: hsl(0, 0%, 100%);
+    --clr-secondary-2: hsl(225, 40%, 83%);
+    --clr-accent-1: hsl(157, 74%, 62%);
+    --clr-accent-2: hsl(157, 100%, 85%);
+    --clr-error: hsl(0, 96%, 61%);
+}
+
